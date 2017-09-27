@@ -29,7 +29,9 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
                   </a>
                 </li>
                 <li style={{display: 'inline', margin: '0 16px'}}>
+                  <a href="/game">
                   Game
+                  </a>
                 </li>
                 <li style={{display: 'inline', margin: '0 16px'}}>
                   <a href='https://github.com/DwightBe'>

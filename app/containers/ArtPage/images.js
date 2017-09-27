@@ -154,3 +154,49 @@ export const Images2011 =
           caption: ""
     },
 ];
+
+export const TheyReturn =
+  [{
+        src: require(`${'../../images/TheyReturn/1.jpg'}`),
+        thumbnail: require(`${'../../images/TheyReturn/1.jpg'}`),
+        thumbnailWidth: 100,
+        thumbnailHeight: 100,
+        caption: ""
+    },
+    {
+          src: require(`${'../../images/TheyReturn/2.jpg'}`),
+          thumbnail: require(`${'../../images/TheyReturn/2.jpg'}`),
+          thumbnailWidth: 100,
+          thumbnailHeight: 100,
+          caption: ""
+    },
+    {
+          src: require(`${'../../images/TheyReturn/3.jpg'}`),
+          thumbnail: require(`${'../../images/TheyReturn/3.jpg'}`),
+          thumbnailWidth: 100,
+          thumbnailHeight: 100,
+          caption: ""
+    },
+    {
+          src: require(`${'../../images/TheyReturn/4.jpg'}`),
+          thumbnail: require(`${'../../images/TheyReturn/4.jpg'}`),
+          thumbnailWidth: 100,
+          thumbnailHeight: 100,
+          caption: ""
+    },
+    {
+          src: require(`${'../../images/TheyReturn/5.jpg'}`),
+          thumbnail: require(`${'../../images/TheyReturn/5.jpg'}`),
+          thumbnailWidth: 100,
+          thumbnailHeight: 100,
+          caption: ""
+    },
+    {
+          src: require(`${'../../images/TheyReturn/6.jpg'}`),
+          thumbnail: require(`${'../../images/TheyReturn/6.jpg'}`),
+          thumbnailWidth: 100,
+          thumbnailHeight: 100,
+          caption: ""
+    },
+
+];

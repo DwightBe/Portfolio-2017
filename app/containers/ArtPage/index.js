@@ -12,7 +12,7 @@
 
 import React from 'react';
 import Gallery from 'react-grid-gallery';
-import { Images2017, Images2016, Images2011 } from './images' ;
+import { Images2017, Images2016, Images2011, TheyReturn } from './images' ;
 
 
 export default class ArtPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -51,7 +51,8 @@ export default class ArtPage extends React.PureComponent { // eslint-disable-lin
                 onClick={this.handleClick.bind(this, Images2011)}>
               Various Works, 2011 - 2015
             </li>
-            <li style={{height: '80px', fontSize: '18px'}}>
+            <li style={{height: '80px', fontSize: '18px'}}
+                onClick={this.handleClick.bind(this, TheyReturn)}>
               They Return, comic, 2013
             </li>
           </ul>
