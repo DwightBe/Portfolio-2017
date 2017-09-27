@@ -12,96 +12,52 @@
 
 import React from 'react';
 import Gallery from 'react-grid-gallery';
-const IMAGES =
-[{
-        src: require(`${'../../images/Guache-Watercolor-2017/Andrea.jpg'}`),
-        thumbnail: require(`${'../../images/Guache-Watercolor-2017/Andrea.jpg'}`),
-        thumbnailWidth: 100,
-        thumbnailHeight: 100,
-        caption: ""
-},
-{
-        src: require(`${'../../images/Guache-Watercolor-2017/Dasha.jpg'}`),
-        thumbnail: require(`${'../../images/Guache-Watercolor-2017/Dasha.jpg'}`),
-        thumbnailWidth: 100,
-        thumbnailHeight: 100,
-        caption: ""
-},
-{
-        src: require(`${'../../images/Guache-Watercolor-2017/Kyrany.jpg'}`),
-        thumbnail: require(`${'../../images/Guache-Watercolor-2017/Kyrany.jpg'}`),
-        thumbnailWidth: 100,
-        thumbnailHeight: 100,
-        caption: ""
-},
-{
-        src: require(`${'../../images/Guache-Watercolor-2017/Laura.jpg'}`),
-        thumbnail: require(`${'../../images/Guache-Watercolor-2017/Laura.jpg'}`),
-        thumbnailWidth: 100,
-        thumbnailHeight: 100,
-        caption: ""
-},
-{
-        src: require(`${'../../images/Guache-Watercolor-2017/Margaret.jpg'}`),
-        thumbnail: require(`${'../../images/Guache-Watercolor-2017/Margaret.jpg'}`),
-        thumbnailWidth: 100,
-        thumbnailHeight: 100,
-        caption: ""
-},
-{
-        src: require(`${'../../images/Guache-Watercolor-2017/Monica.jpg'}`),
-        thumbnail: require(`${'../../images/Guache-Watercolor-2017/Monica.jpg'}`),
-        thumbnailWidth: 100,
-        thumbnailHeight: 100,
-        caption: ""
-},
-{
-        src: require(`${'../../images/Guache-Watercolor-2017/Prom_Ellen.jpg'}`),
-        thumbnail: require(`${'../../images/Guache-Watercolor-2017/Prom_Ellen.jpg'}`),
-        thumbnailWidth: 100,
-        thumbnailHeight: 100,
-        caption: ""
-},
-{
-        src: require(`${'../../images/Guache-Watercolor-2017/Prom_Taylor.jpg'}`),
-        thumbnail: require(`${'../../images/Guache-Watercolor-2017/Prom_Taylor.jpg'}`),
-        thumbnailWidth: 100,
-        thumbnailHeight: 100,
-        caption: ""
-},
-{
-        src: require(`${'../../images/Guache-Watercolor-2017/Taylor.jpg'}`),
-        thumbnail: require(`${'../../images/Guache-Watercolor-2017/Taylor.jpg'}`),
-        thumbnailWidth: 100,
-        thumbnailHeight: 100,
-        caption: ""
-}
-];
+import { Images2017, Images2016, Images2011 } from './images' ;
+
 
 export default class ArtPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  constructor(props) {
+    super(props);
+    this.state = {
+      images: Images2017
+    };
+  }
+
+  handleClick(images){
+    console.log('images', images);
+    this.setState({
+       images: images
+   });
+  }
 
   render() {
     return (
-      <div>
+      <div style={{padding: '40px 0px'}}>
         <nav style={{ width: '192px',
-                      padding: 0,
                       zIndex: 9000,
                       position: 'fixed',
-                      top: '96px'}}>
+                      top: '120px',
+                      lineHeight: '20px'}}>
           <ul>
-            <li style={{height: '40px', fontSize: '18px'}}>
+            <li onClick={this.handleClick.bind(this, Images2017)}
+                style={{height: '80px', fontSize: '18px'}}>
               Guache/Watercolor Portraits, 2016 - 2017
             </li>
-            <li style={{height: '40px', fontSize: '18px'}}>
+            <li style={{height: '60px', fontSize: '18px'}}
+                onClick={this.handleClick.bind(this, Images2016)}>
               Oil Portraits, 2016
             </li>
-            <li style={{height: '40px', fontSize: '18px'}}>
+            <li style={{height: '80px', fontSize: '18px'}}
+                onClick={this.handleClick.bind(this, Images2011)}>
               Various Works, 2011 - 2015
+            </li>
+            <li style={{height: '80px', fontSize: '18px'}}>
+              They Return, comic, 2013
             </li>
           </ul>
         </nav>
         <div style={{maxWidth: '530px', margin: '0 auto'}}>
-        <Gallery images={IMAGES}/>
+          <Gallery images={this.state.images}/>
         </div>
       </div>
     );

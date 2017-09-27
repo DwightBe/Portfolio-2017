@@ -24,12 +24,12 @@ export default function App() {
   return (
     <div style={{padding: '20px 32px 0px'}}>
       <Header />
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/art" component={ArtPage} />
-          <Route exact path="/music" component={MusicPage} />
-          <Route component={NotFoundPage} />
-        </Switch>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/art" component={ArtPage} />
+        <Route exact path="/music" component={MusicPage} />
+        <Route component={NotFoundPage} />
+      </Switch>
     </div>
   );
 }
