@@ -15,15 +15,21 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
+import ArtPage from 'containers/ArtPage/Loadable';
+import MusicPage from 'containers/MusicPage/Loadable';
+import Header from 'components/Header';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 export default function App() {
   return (
-    <div>
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route component={NotFoundPage} />
-      </Switch>
+    <div style={{padding: '20px 32px 0px'}}>
+      <Header />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/art" component={ArtPage} />
+          <Route exact path="/music" component={MusicPage} />
+          <Route component={NotFoundPage} />
+        </Switch>
     </div>
   );
 }

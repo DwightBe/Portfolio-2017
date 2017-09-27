@@ -9,7 +9,7 @@ injectGlobal`
   }
 
   body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
   }
 
   body.fontLoaded {
@@ -21,10 +21,20 @@ injectGlobal`
     min-height: 100%;
     min-width: 100%;
   }
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
 
   p,
   label {
     font-family: Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5em;
+  }
+  ul {
+    padding-left: 0px
   }
 `;
