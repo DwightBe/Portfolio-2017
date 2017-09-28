@@ -40,18 +40,18 @@ export default class ArtPage extends React.PureComponent { // eslint-disable-lin
                       lineHeight: '20px'}}>
           <ul>
             <li onClick={this.handleClick.bind(this, Images2017)}
-                style={{height: '80px', fontSize: '18px'}}>
+                style={{height: '80px', fontSize: '18px', cursor: 'pointer'}}>
               Guache/Watercolor Portraits, 2016 - 2017
             </li>
-            <li style={{height: '60px', fontSize: '18px'}}
+            <li style={{height: '60px', fontSize: '18px', cursor: 'pointer'}}
                 onClick={this.handleClick.bind(this, Images2016)}>
               Oil Portraits, 2016
             </li>
-            <li style={{height: '80px', fontSize: '18px'}}
+            <li style={{height: '80px', fontSize: '18px', cursor: 'pointer'}}
                 onClick={this.handleClick.bind(this, Images2011)}>
               Various Works, 2011 - 2015
             </li>
-            <li style={{height: '80px', fontSize: '18px'}}
+            <li style={{height: '80px', fontSize: '18px', cursor: 'pointer'}}
                 onClick={this.handleClick.bind(this, TheyReturn)}>
               They Return, comic, 2013
             </li>

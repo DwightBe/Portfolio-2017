@@ -18,6 +18,7 @@ import HomePage from 'containers/HomePage/Loadable';
 import ArtPage from 'containers/ArtPage/Loadable';
 import MusicPage from 'containers/MusicPage/Loadable';
 import GamePage from 'containers/GamePage/Loadable';
+import ResumePage from 'containers/ResumePage/Loadable';
 import Header from 'components/Header';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
@@ -30,6 +31,7 @@ export default function App() {
         <Route exact path="/art" component={ArtPage} />
         <Route exact path="/music" component={MusicPage} />
         <Route exact path="/game" component={GamePage} />
+        <Route exact path="/resume" component={ResumePage} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

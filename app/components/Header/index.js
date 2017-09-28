@@ -39,7 +39,9 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
                   </a>
                 </li>
                 <li style={{display: 'inline', margin: '0 16px'}}>
-                  Resume
+                  <a href="/resume">
+                    Resume
+                  </a>
                 </li>
               </ul>
             </nav>
