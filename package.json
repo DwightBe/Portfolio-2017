@@ -175,7 +175,12 @@
       "express",
       "ip",
       "minimist",
-      "sanitize.css"
+      "sanitize.css",
+      "primus",
+      "dotenv-webpack",
+      "ioredis",
+      "feathers-authentication",
+      "sockjs",
     ],
     "include": [
       "core-js",
@@ -292,7 +297,7 @@
     "pre-commit": "1.2.2",
     "react-test-renderer": "15.6.1",
     "rimraf": "2.6.1",
-    "shelljs": "^0.7.7",
+    "shelljs": "^0.7.8",
     "style-loader": "0.18.1",
     "url-loader": "0.5.8",
     "webpack": "^3.6.0",
