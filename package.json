@@ -180,7 +180,7 @@
       "dotenv-webpack",
       "ioredis",
       "feathers-authentication",
-      "sockjs",
+      "sockjs"
     ],
     "include": [
       "core-js",
