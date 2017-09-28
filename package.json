@@ -244,7 +244,11 @@
     "sanitize.css": "4.1.0",
     "styled-components": "2.0.0",
     "warning": "3.0.0",
-    "whatwg-fetch": "2.0.3"
+    "whatwg-fetch": "2.0.3",
+    "webpack": "^3.6.0",
+    "webpack-dev-middleware": "^1.11.0",
+    "webpack-dev-server": "^2.9.1",
+    "webpack-hot-middleware": "^2.18.0"
   },
   "devDependencies": {
     "add-asset-html-webpack-plugin": "2.0.1",
