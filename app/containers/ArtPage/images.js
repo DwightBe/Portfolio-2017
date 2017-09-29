@@ -1,3 +1,4 @@
+/* eslint-disable */
 export const Images2017 =
   [{
         src: require(`${'../../images/Guache-Watercolor-2017/Andrea.jpg'}`),

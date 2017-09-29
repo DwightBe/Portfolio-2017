@@ -24,7 +24,7 @@ import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 export default function App() {
   return (
-    <div style={{padding: '20px 32px 0px'}}>
+    <div style={{ padding: '20px 32px 0px' }}>
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />

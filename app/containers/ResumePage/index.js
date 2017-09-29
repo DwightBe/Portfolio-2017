@@ -47,7 +47,7 @@ import React from 'react';
 export default class ResumePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div style={{margin: '20px auto', textAlign: 'center'}}>
+      <div style={{ margin: '20px auto', textAlign: 'center' }}>
         <p>
         dwightbenignus@gmail.com
         </p>
