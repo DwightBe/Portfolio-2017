@@ -1,7 +1,0 @@
-{
-  "scripts": {
-    "dokku": {
-      "postdeploy": "npm run build:dll"
-    }
-  }
-}
