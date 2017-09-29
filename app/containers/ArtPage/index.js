@@ -32,7 +32,7 @@ export default class ArtPage extends React.PureComponent { // eslint-disable-lin
     return (
       <div style={{ padding: '40px 0px' }}>
         <nav style={{ width: '192px',
-                      zIndex: 9000,
+                      zIndex: 3,
                       position: 'fixed',
                       top: '120px',
                       lineHeight: '20px' }}>

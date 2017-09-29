@@ -9,7 +9,7 @@ injectGlobal`
   }
 
   body {
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
   }
 
   body.fontLoaded {
