@@ -8,7 +8,6 @@
  * reloading is not a necessity for you then you can refactor it and remove
  * the linting exception.
  */
- /* eslint-disable */
 
 import React from 'react';
 import Gallery from 'react-grid-gallery';
