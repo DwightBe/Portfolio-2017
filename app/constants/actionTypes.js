@@ -1,0 +1,1 @@
+export const SELECT_GALLERY = 'SELECT_GALLERY';

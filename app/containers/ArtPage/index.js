@@ -13,6 +13,7 @@ import React from 'react';
 import Gallery from 'react-grid-gallery';
 import { Images2017, Images2016, Images2011, TheyReturn } from './images';
 import MediaQuery from 'react-responsive';
+import { connect } from 'react-redux'
 
 export default class ArtPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
