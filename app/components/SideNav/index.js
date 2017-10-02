@@ -5,11 +5,15 @@ import MediaQuery from 'react-responsive';
 class SideNav extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <nav style={{ width: '192px',
-                    zIndex: 3,
-                    position: 'fixed',
-                    top: '120px',
-                    lineHeight: '20px' }}>
+      <nav
+        style={{
+          width: '192px',
+          zIndex: 3,
+          position: 'fixed',
+          top: '120px',
+          lineHeight: '20px',
+        }}
+      >
         <ul>
           <MediaQuery maxWidth={1000}>
             <li style={{ height: '60px', fontSize: '18px', cursor: 'pointer' }}>
@@ -36,7 +40,7 @@ class SideNav extends React.Component { // eslint-disable-line react/prefer-stat
           <li style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}>
             <a href="/art">
               They Return, comic, 2013
-            </a>  
+            </a>
           </li>
           <MediaQuery maxWidth={1000}>
             <li style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}>

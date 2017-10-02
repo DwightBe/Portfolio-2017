@@ -13,7 +13,7 @@ import React from 'react';
 import Gallery from 'react-grid-gallery';
 import { Images2017, Images2016, Images2011, TheyReturn } from './images';
 import MediaQuery from 'react-responsive';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 
 export default class ArtPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
@@ -33,11 +33,12 @@ export default class ArtPage extends React.PureComponent { // eslint-disable-lin
     return (
       <div style={{ padding: '40px 0px' }}>
         <MediaQuery minWidth={1000}>
-          <nav style={{ width: '192px',
-                        zIndex: 3,
-                        position: 'fixed',
-                        top: '120px',
-                        lineHeight: '20px' }}>
+          <nav style={{
+            width: '192px',
+            zIndex: 3,
+            position: 'fixed',
+            top: '120px',
+            lineHeight: '20px' }}>
             <ul>
               <li onClick={this.handleClick.bind(this, Images2017)}
                   style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}>
