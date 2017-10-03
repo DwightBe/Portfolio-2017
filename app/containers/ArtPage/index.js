@@ -14,18 +14,10 @@ import Gallery from 'react-grid-gallery';
 import { Images2017, Images2016, Images2011, TheyReturn } from './images';
 import MediaQuery from 'react-responsive';
 import { connect } from 'react-redux';
+import { configureStore } from '../../configureStore';
 import {
   SELECT_GALLERY
 } from '../../constants/actionTypes';
-
-const mapStateToProps = (state) => {
-  
-}
-
-const mapDispatchToProps = dispatch => ({
-  selectGallery: () =>
-    dispatch({ type: SELECT_GALLERY }),
-});
 
 class ArtPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
@@ -36,9 +28,8 @@ class ArtPage extends React.Component { // eslint-disable-line react/prefer-stat
   }
 
   handleClick(images) {
-    //dispatch(selectGallery(images))
-    //console.log('STORE', store.getState());
     this.props.selectGallery();
+    //console.log('STORE', store.getState());
 
     this.setState({
       images,
@@ -83,5 +74,17 @@ class ArtPage extends React.Component { // eslint-disable-line react/prefer-stat
     );
   }
 }
+
+const mapStateToProps = (state) => {
+  return {
+    gallery: ""
+  }
+}
+
+const mapDispatchToProps = dispatch => ({
+  selectGallery: () => {
+    dispatch({ type: SELECT_GALLERY });
+  },
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(ArtPage);
