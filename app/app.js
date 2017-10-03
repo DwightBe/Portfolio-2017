@@ -13,6 +13,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
+import { createStore } from 'redux';
+import reducer from './reducers';
 import createHistory from 'history/createBrowserHistory';
 import 'sanitize.css/sanitize.css';
 
@@ -29,8 +31,6 @@ import '!file-loader?name=[name].[ext]!./manifest.json';
 import 'file-loader?name=[name].[ext]!./.htaccess';
 /* eslint-enable import/no-unresolved, import/extensions */
 
-import configureStore from './configureStore';
-
 // Import i18n messages
 import { translationMessages } from './i18n';
 
@@ -40,7 +40,8 @@ import './global-styles';
 // Create redux store with history
 const initialState = {};
 const history = createHistory();
-const store = configureStore(initialState, history);
+const store = createStore(reducer);
+console.log('create store', store.getState());
 const MOUNT_NODE = document.getElementById('app');
 
 const render = (messages) => {
@@ -53,16 +54,6 @@ const render = (messages) => {
     MOUNT_NODE
   );
 };
-
-if (module.hot) {
-  // Hot reloadable React components and translation json files
-  // modules.hot.accept does not accept dynamic dependencies,
-  // have to be constants at compile-time
-  module.hot.accept(['./i18n', 'containers/App'], () => {
-    ReactDOM.unmountComponentAtNode(MOUNT_NODE);
-    render(translationMessages);
-  });
-}
 
 // Chunked polyfill for browsers without Intl support
 if (!window.Intl) {

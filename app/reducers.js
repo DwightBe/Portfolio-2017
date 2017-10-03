@@ -2,7 +2,7 @@
  * Combine all reducers in this file and export the combined reducers.
  */
 
-import { combineReducers } from 'redux-immutable';
+import { combineReducers } from 'redux';
 import { fromJS } from 'immutable';
 import { LOCATION_CHANGE } from 'react-router-redux';
 import objectAssign from 'object-assign';
@@ -36,13 +36,11 @@ function routeReducer(state = routeInitialState, action) {
   }
 }
 
+const reducer = combineReducers({
+  route: routeReducer,
+  gallery,
+})
 /**
  * Creates the main reducer with the dynamically injected ones
  */
-export default function createReducer(injectedReducers) {
-  return combineReducers({
-    route: routeReducer,
-    gallery,
-    ...injectedReducers,
-  });
-}
+export default reducer

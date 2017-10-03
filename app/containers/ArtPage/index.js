@@ -14,7 +14,7 @@ import Gallery from 'react-grid-gallery';
 import { Images2017, Images2016, Images2011, TheyReturn } from './images';
 import MediaQuery from 'react-responsive';
 import { connect } from 'react-redux';
-import { configureStore } from '../../configureStore';
+import { selectGallery } from '../../actions';
 import {
   SELECT_GALLERY
 } from '../../constants/actionTypes';
@@ -28,7 +28,7 @@ class ArtPage extends React.Component { // eslint-disable-line react/prefer-stat
   }
 
   handleClick(images) {
-    this.props.selectGallery(images);
+    //this.props.selectGallery(images);
     this.setState({
       images,
     });
@@ -73,15 +73,14 @@ class ArtPage extends React.Component { // eslint-disable-line react/prefer-stat
 }
 
 const mapStateToProps = (state) => {
-  console.log('mapstate', state.gallery);
   return {
     gallery: state.gallery
   }
 }
 
 const mapDispatchToProps = dispatch => ({
-  selectGallery: (payload) => {
-    dispatch({ type: SELECT_GALLERY, payload });
+  onClick: () => {
+    dispatch(selectGallery());
   },
 });
 
