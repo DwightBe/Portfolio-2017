@@ -5,11 +5,12 @@ import {
 
 
 export default (state = DEFAULT_GALLERY, action) => {
+  console.log('GALLERY', action);
   switch (action.type) {
     case SELECT_GALLERY:
-      console.log('SELECT GALLERY', DEFAULT_GALLERY);
       return {
-        ...state
+        ...state,
+        gallery: action.payload
       };
     default:
       return state;
