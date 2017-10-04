@@ -3,13 +3,10 @@ import {
 } from '../containers/App/constants'; // eslint-disable-line
 
 
-export default (state = DEFAULT_GALLERY, action) => {
+export default (state = 'Images2017', action) => {
   switch (action.type) {
     case 'SELECT_GALLERY':
-      return {
-        ...state,
-        gallery: action.payload
-      };
+      return action.gallery;
     default:
       return state;
   }

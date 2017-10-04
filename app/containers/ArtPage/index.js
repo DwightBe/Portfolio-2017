@@ -28,13 +28,31 @@ class ArtPage extends React.Component { // eslint-disable-line react/prefer-stat
   }
 
   handleClick(images) {
-    //this.props.selectGallery(images);
+    this.props.selectGallery(images);
+
     this.setState({
       images,
     });
   }
 
   render() {
+    let galleryImages;
+    switch(this.props.gallery) {
+        case 'Images2017':
+            galleryImages = Images2017;
+            break;
+        case 'Images2016':
+            galleryImages = Images2016;
+            break;
+        case 'Images2011':
+            galleryImages = Images2011;
+            break;
+        case 'TheyReturn':
+            galleryImages = TheyReturn;
+                break;
+        default:
+            galleryImages = Images2017;
+    }
     return (
       <div style={{ padding: '40px 0px' }}>
         <MediaQuery minWidth={1000}>
@@ -45,27 +63,27 @@ class ArtPage extends React.Component { // eslint-disable-line react/prefer-stat
             top: '120px',
             lineHeight: '20px' }}>
             <ul>
-              <li onClick={this.handleClick.bind(this, 'Images2017')}
+              <li onClick={() => this.props.onGalleryClick('Images2017')}
                   style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}>
                 Guache/Watercolor Portraits, 2016 - 2017
               </li>
               <li style={{ height: '60px', fontSize: '18px', cursor: 'pointer' }}
-                  onClick={this.handleClick.bind(this, 'Images2016')}>
+                  onClick={() => this.props.onGalleryClick('Images2016')}>
                 Oil Portraits, 2016
               </li>
               <li style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}
-                  onClick={this.handleClick.bind(this, 'Images2011')}>
+                  onClick={() => this.props.onGalleryClick('Images2011')}>
                 Various Works, 2011 - 2015
               </li>
               <li style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}
-                  onClick={this.handleClick.bind(this, 'TheyReturn')}>
+                  onClick={() => this.props.onGalleryClick('TheyReturn')}>
                 They Return, comic, 2013
               </li>
             </ul>
           </nav>
         </MediaQuery>
         <div style={{ maxWidth: '530px', margin: '0 auto' }}>
-          <Gallery images={this.state.images}/>
+          <Gallery images={galleryImages}/>
         </div>
       </div>
     );
@@ -73,14 +91,15 @@ class ArtPage extends React.Component { // eslint-disable-line react/prefer-stat
 }
 
 const mapStateToProps = (state) => {
+  console.log('state', state);
   return {
     gallery: state.gallery
   }
 }
 
 const mapDispatchToProps = dispatch => ({
-  onClick: () => {
-    dispatch(selectGallery());
+  onGalleryClick: (gallery) => {
+    dispatch(selectGallery(gallery));
   },
 });
 
