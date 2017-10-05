@@ -26,7 +26,7 @@ export default class GamePage extends React.PureComponent { // eslint-disable-li
           </div>
           <iframe width="560" height="315"
           src="https://www.youtube.com/embed/yUskm1eCoog"
-          frameBorder="0" allowfullscreen>
+          frameBorder="0" allowFullScreen>
         </iframe>
 
       </div>

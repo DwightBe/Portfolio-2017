@@ -13,7 +13,7 @@
 import React from 'react';
 import SideNav from 'components/SideNav';
 
-export default class ProjectPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export default class ProjectsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div>

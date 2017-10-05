@@ -22,9 +22,6 @@ import {
 class ArtPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
-    this.state = {
-      images: Images2017,
-    };
   }
 
   handleClick(images) {

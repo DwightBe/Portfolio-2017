@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
 
 class SideNav extends React.Component { // eslint-disable-line react/prefer-stateless-function
@@ -17,41 +17,41 @@ class SideNav extends React.Component { // eslint-disable-line react/prefer-stat
         <ul>
           <MediaQuery maxWidth={1000}>
             <li style={{ height: '60px', fontSize: '18px', cursor: 'pointer' }}>
-              <a href="/art">
+              <Link to="/art">
                 Art
-              </a>
+              </Link>
             </li>
           </MediaQuery>
           <li style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}>
-            <a href="/art">
+            <Link to="/art">
               Guache/Watercolor Portraits, 2016 - 2017
-            </a>
+            </Link>
           </li>
           <li style={{ height: '60px', fontSize: '18px', cursor: 'pointer' }}>
-            <a href="/art">
+            <Link to="/art">
               Oil Portraits, 2016
-            </a>
+            </Link>
           </li>
           <li style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}>
-            <a href="/art">
+            <Link to="/art">
               Various Works, 2011 - 2015
-            </a>
+            </Link>
           </li>
           <li style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}>
-            <a href="/art">
+            <Link to="/art">
               They Return, comic, 2013
-            </a>
+            </Link>
           </li>
           <MediaQuery maxWidth={1000}>
             <li style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}>
-              <a href="/music">
+              <Link to="/music">
                 Music
-              </a>
+              </Link>
             </li>
             <li style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}>
-              <a href="/game">
+              <Link to="/game">
                 Game
-              </a>
+              </Link>
             </li>
             <li style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}>
               <a href="https://github.com/DwightBe">
