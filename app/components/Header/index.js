@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
 import MediaQuery from 'react-responsive';
 
@@ -20,19 +20,19 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
           <ul style={{ listStyleType: 'none', marginTop: 50 }}>
             <MediaQuery minWidth={1000}>
               <li style={{ display: 'inline', margin: '0 16px' }}>
-                <a href="/art">
+                <Link to="/art">
                   Art
-                </a>
+                </Link>
               </li>
               <li style={{ display: 'inline', margin: '0 16px' }}>
-                <a href="/music">
+                <Link to="music">
                   Music
-                </a>
+                </Link>
               </li>
               <li style={{ display: 'inline', margin: '0 16px' }}>
-                <a href="/game">
+                <Link to="/game">
                   Game
-                </a>
+                </Link>
               </li>
               <li style={{ display: 'inline', margin: '0 16px' }}>
                 <a href="https://github.com/DwightBe">
@@ -40,21 +40,21 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
                 </a>
               </li>
               <li style={{ display: 'inline', margin: '0 16px' }}>
-                <a href="/resume">
+                <Link to="/resume">
                   Contact
-                </a>
+                </Link>
               </li>
             </MediaQuery>
             <MediaQuery maxWidth={1000}>
               <li style={{ display: 'inline', margin: '0 16px' }}>
-                <a href="/projects">
+                <Link to="/projects">
                   Projects
-                </a>
+                </Link>
               </li>
               <li style={{ display: 'inline', margin: '0 16px' }}>
-                <a href="/resume">
+                <Link to="/resume">
                   ?
-                </a>
+                </Link>
               </li>
             </MediaQuery>
           </ul>

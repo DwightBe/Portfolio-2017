@@ -22,7 +22,7 @@ const routeInitialState = fromJS({
 });
 
 const reducer = combineReducers({
-  gallery,
+  gallery
 })
 /**
  * Creates the main reducer with the dynamically injected ones
