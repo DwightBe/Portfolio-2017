@@ -34,6 +34,10 @@ injectGlobal`
   label {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     line-height: 1.5em;
+    font-size: 1em;
+    @media (max-width: 767px) {
+        font-size: 0.8em;
+    }
   }
   ul {
     padding-left: 0px

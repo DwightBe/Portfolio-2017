@@ -17,7 +17,7 @@ export default class MusicPage extends React.PureComponent { // eslint-disable-l
   render() {
     return (
       <div style={{margin: '20px auto', textAlign: 'center'}}>
-        <h3><i>Untitled Album, 2015</i></h3><br />
+        <h3><i>Untitled Album, 2015</i></h3>
         <iframe
         style={{border: 0, width: '80%', maxWidth: '350px', height: '470px'}}
         src="https://bandcamp.com/EmbeddedPlayer/album=3692719315/size=large/bgcol=ffffff/linkcol=63b2cc/tracklist=false/transparent=true/" seamless>
