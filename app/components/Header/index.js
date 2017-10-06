@@ -14,7 +14,7 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
             </div>
           </MediaQuery>
           <MediaQuery maxWidth={799}>
-            <div style={{ fontSize: '16px', fontWeight: 900, height: '50px' }}>
+            <div style={{ fontSize: '16px', fontWeight: 900, height: '50px', lineHeight: '60px' }}>
               Dwight Benignus
             </div>
           </MediaQuery>
@@ -24,7 +24,7 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
             </div>
           </MediaQuery>
           <MediaQuery maxWidth={999}>
-            <div style={{ fontSize: '10px', lineHeight: '34px'}}>
+            <div style={{ fontSize: '10px', width: '120px'}}>
               Multimedia Artist and Programmer
             </div>
           </MediaQuery>
