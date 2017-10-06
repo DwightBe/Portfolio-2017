@@ -64,7 +64,7 @@ export default class ResumePage extends React.PureComponent { // eslint-disable-
           <h3>Education</h3>
         </p>
         <p>
-          Bachelor of Arts, Arts and Technology, University of Texas at Dallas, GPA: 3.3, 2004-2008 Attended Oregon Institute of Technology, 2009-2011
+          Bachelor of Arts, Arts and Technology, University of Texas at Dallas, 2004-2008 Attended Oregon Institute of Technology, 2009-2011
           Awards
         </p>
         <p>
