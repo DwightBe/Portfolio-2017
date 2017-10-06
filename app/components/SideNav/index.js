@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { selectGallery } from '../../actions';
 import MediaQuery from 'react-responsive';
-import { MenuItem } from './styles';
+import { MenuItem, SubMenuItem } from './styles';
 import './styles';
 import {
   SELECT_GALLERY
@@ -29,26 +29,26 @@ class SideNav extends React.Component { // eslint-disable-line react/prefer-stat
               </Link>
             </MenuItem>
           </MediaQuery>
-          <MenuItem onClick={() => this.props.onGalleryClick('Images2017')}>
+          <SubMenuItem onClick={() => this.props.onGalleryClick('Images2017')}>
             <Link to="/art">
               Guache/Watercolor Portraits, 2016 - 2017
             </Link>
-          </MenuItem>
-          <MenuItem onClick={() => this.props.onGalleryClick('Images2016')}>
+          </SubMenuItem>
+          <SubMenuItem onClick={() => this.props.onGalleryClick('Images2016')}>
             <Link to="/art">
               Oil Portraits, 2016
             </Link>
-          </MenuItem>
-          <MenuItem onClick={() => this.props.onGalleryClick('Images2011')}>
+          </SubMenuItem>
+          <SubMenuItem onClick={() => this.props.onGalleryClick('Images2011')}>
             <Link to="/art">
               Various Works, 2011 - 2015
             </Link>
-          </MenuItem>
-          <MenuItem onClick={() => this.props.onGalleryClick('TheyReturn')}>
+          </SubMenuItem>
+          <SubMenuItem onClick={() => this.props.onGalleryClick('TheyReturn')}>
             <Link to="/art">
               They Return, comic, 2013
             </Link>
-          </MenuItem>
+          </SubMenuItem>
           <MediaQuery maxWidth={1000}>
             <MenuItem>
               <Link to="/music">

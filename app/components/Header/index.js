@@ -21,7 +21,7 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
 
         <nav style={{ height: '80px' }}>
           <ul style={{ listStyleType: 'none', marginTop: 50 }}>
-            <MediaQuery minWidth={768}>
+            <MediaQuery minWidth={1000}>
               <MenuItem>
                 <Link to="/art">
                   Art
@@ -48,7 +48,7 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
                 </Link>
               </MenuItem>
             </MediaQuery>
-            <MediaQuery maxWidth={767}>
+            <MediaQuery maxWidth={999}>
               <MenuItem>
                 <Link to="/">
                   Projects
