@@ -24,7 +24,7 @@ export default class GamePage extends React.PureComponent { // eslint-disable-li
               all the pixel art. Music by Tyler Suder.
 
           </div>
-          <iframe width="560" height="315"
+          <iframe style={{padding: '20px 0 20px', width: '80%', maxWidth: '560px', height: '315px'}}
           src="https://www.youtube.com/embed/yUskm1eCoog"
           frameBorder="0" allowFullScreen>
         </iframe>
