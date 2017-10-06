@@ -17,8 +17,8 @@ export default class GamePage extends React.PureComponent { // eslint-disable-li
   render() {
     return (
       <div style={{margin: '20px auto', textAlign: 'center'}}>
-        <i>Untitled Unity Game Project, 2014</i><br />
-          <div>
+        <h3><i>Untitled Unity Game Project, 2014</i></h3><br />
+          <div style={{maxWidth: '500px', textAlign: 'center', margin: '0 auto'}}>
 
               A game project I made in Unity in 2014. Ended up being just a scripted scene and walk cycle. I created
               all the pixel art. Music by Tyler Suder.

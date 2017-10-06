@@ -40,5 +40,12 @@ export const Title = styled.div`
       height: 34px;
       width: 100px;
   }
+`;
 
+export const MenuItem = styled.li`
+  display: inline;
+  margin: 0 16px;
+  @media (max-width: 480px) {
+    font-size: 0.8em;
+  }
 `;

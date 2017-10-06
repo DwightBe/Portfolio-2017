@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
 import MediaQuery from 'react-responsive';
-import { Name, Title } from './styles';
+import { Name, Title, MenuItem } from './styles';
 
 class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -21,44 +21,44 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
 
         <nav style={{ height: '80px' }}>
           <ul style={{ listStyleType: 'none', marginTop: 50 }}>
-            <MediaQuery minWidth={800}>
-              <li style={{ display: 'inline', margin: '0 16px' }}>
+            <MediaQuery minWidth={768}>
+              <MenuItem>
                 <Link to="/art">
                   Art
                 </Link>
-              </li>
-              <li style={{ display: 'inline', margin: '0 16px' }}>
+              </MenuItem>
+              <MenuItem>
                 <Link to="music">
                   Music
                 </Link>
-              </li>
-              <li style={{ display: 'inline', margin: '0 16px' }}>
+              </MenuItem>
+              <MenuItem>
                 <Link to="/game">
                   Game
                 </Link>
-              </li>
-              <li style={{ display: 'inline', margin: '0 16px' }}>
+              </MenuItem>
+              <MenuItem>
                 <a href="https://github.com/DwightBe">
                   Code
                 </a>
-              </li>
-              <li style={{ display: 'inline', margin: '0 16px' }}>
+              </MenuItem>
+              <MenuItem>
                 <Link to="/resume">
-                  Contact
+                  About
                 </Link>
-              </li>
+              </MenuItem>
             </MediaQuery>
-            <MediaQuery maxWidth={799}>
-              <li style={{ display: 'inline', margin: '0 16px' }}>
+            <MediaQuery maxWidth={767}>
+              <MenuItem>
                 <Link to="/">
                   Projects
                 </Link>
-              </li>
-              <li style={{ display: 'inline', margin: '0 16px' }}>
+              </MenuItem>
+              <MenuItem>
                 <Link to="/resume">
                   ?
                 </Link>
-              </li>
+              </MenuItem>
             </MediaQuery>
           </ul>
         </nav>
