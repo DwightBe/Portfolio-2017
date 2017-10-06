@@ -8,12 +8,26 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
     return (
       <NavBar style={{ fontSize: '18px' }}>
         <div style={{ height: '80px' }}>
-          <div style={{ fontSize: '28px', fontWeight: 900, height: '50px' }}>
-            Dwight Benignus
-          </div>
-          <div style={{ fontSize: '18px' }}>
-            Multimedia Artist and Programmer
-          </div>
+          <MediaQuery minWidth={1000}>
+            <div style={{ fontSize: '28px', fontWeight: 900, height: '50px' }}>
+              Dwight Benignus
+            </div>
+          </MediaQuery>
+          <MediaQuery maxWidth={999}>
+            <div style={{ fontSize: '20px', fontWeight: 900, height: '50px' }}>
+              Dwight Benignus
+            </div>
+          </MediaQuery>
+          <MediaQuery minWidth={1000}>
+            <div style={{ fontSize: '18px' }}>
+              Multimedia Artist and Programmer
+            </div>
+          </MediaQuery>
+          <MediaQuery maxWidth={999}>
+            <div style={{ fontSize: '14px' }}>
+              Multimedia Artist and Programmer
+            </div>
+          </MediaQuery>
         </div>
 
         <nav style={{ height: '80px' }}>
@@ -47,7 +61,7 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
             </MediaQuery>
             <MediaQuery maxWidth={1000}>
               <li style={{ display: 'inline', margin: '0 16px' }}>
-                <Link to="/projects">
+                <Link to="/">
                   Projects
                 </Link>
               </li>
