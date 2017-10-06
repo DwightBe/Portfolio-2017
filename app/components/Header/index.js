@@ -14,7 +14,7 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
             </div>
           </MediaQuery>
           <MediaQuery maxWidth={799}>
-            <div style={{ fontSize: '20px', fontWeight: 900, height: '50px' }}>
+            <div style={{ fontSize: '16px', fontWeight: 900, height: '50px' }}>
               Dwight Benignus
             </div>
           </MediaQuery>
