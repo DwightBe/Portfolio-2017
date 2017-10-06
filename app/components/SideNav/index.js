@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { selectGallery } from '../../actions';
 import MediaQuery from 'react-responsive';
+import { MenuItem } from './styles';
+import './styles';
 import {
   SELECT_GALLERY
 } from '../../constants/actionTypes';
@@ -12,61 +14,57 @@ class SideNav extends React.Component { // eslint-disable-line react/prefer-stat
     return (
       <nav
         style={{
-          width: '192px',
+          width: '180px',
           zIndex: 3,
           position: 'fixed',
-          top: '120px',
+          top: '100px',
           lineHeight: '20px',
         }}
       >
         <ul>
           <MediaQuery maxWidth={1000}>
-            <li style={{ height: '60px', fontSize: '18px', cursor: 'pointer' }}>
+            <MenuItem>
               <Link to="/art">
                 Art
               </Link>
-            </li>
+            </MenuItem>
           </MediaQuery>
-          <li onClick={() => this.props.onGalleryClick('Images2017')}
-              style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}>
+          <MenuItem onClick={() => this.props.onGalleryClick('Images2017')}>
             <Link to="/art">
               Guache/Watercolor Portraits, 2016 - 2017
             </Link>
-          </li>
-          <li onClick={() => this.props.onGalleryClick('Images2016')}
-              style={{ height: '60px', fontSize: '18px', cursor: 'pointer' }}>
+          </MenuItem>
+          <MenuItem onClick={() => this.props.onGalleryClick('Images2016')}>
             <Link to="/art">
               Oil Portraits, 2016
             </Link>
-          </li>
-          <li onClick={() => this.props.onGalleryClick('Images2011')}
-              style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}>
+          </MenuItem>
+          <MenuItem onClick={() => this.props.onGalleryClick('Images2011')}>
             <Link to="/art">
               Various Works, 2011 - 2015
             </Link>
-          </li>
-          <li onClick={() => this.props.onGalleryClick('TheyReturn')}
-              style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}>
+          </MenuItem>
+          <MenuItem onClick={() => this.props.onGalleryClick('TheyReturn')}>
             <Link to="/art">
               They Return, comic, 2013
             </Link>
-          </li>
+          </MenuItem>
           <MediaQuery maxWidth={1000}>
-            <li style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}>
+            <MenuItem>
               <Link to="/music">
                 Music
               </Link>
-            </li>
-            <li style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}>
+            </MenuItem>
+            <MenuItem>
               <Link to="/game">
                 Game
               </Link>
-            </li>
-            <li style={{ height: '80px', fontSize: '18px', cursor: 'pointer' }}>
+            </MenuItem>
+            <MenuItem>
               <a href="https://github.com/DwightBe">
                 Code
               </a>
-            </li>
+            </MenuItem>
           </MediaQuery>
         </ul>
       </nav>

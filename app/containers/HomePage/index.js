@@ -19,7 +19,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
   render() {
     return (
       <div>
-        <MediaQuery maxWidth={480}>
+        <MediaQuery maxWidth={800}>
           <SideNav />
         </MediaQuery>
       </div>
