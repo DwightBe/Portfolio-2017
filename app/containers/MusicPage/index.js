@@ -11,12 +11,13 @@
  /* eslint-disable */
 
 import React from 'react';
+import { ContentContainer } from '../App/styles';
 
 
 export default class MusicPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div style={{margin: '20px auto', textAlign: 'center'}}>
+      <ContentContainer>
         <h3><i>Untitled Album, 2015</i></h3>
         <iframe
         style={{border: 0, width: '80%', maxWidth: '350px', height: '470px'}}
@@ -25,7 +26,7 @@ export default class MusicPage extends React.PureComponent { // eslint-disable-l
           Untitled Album by Dwight Benignus
           </a>
         </iframe>
-      </div>
+      </ContentContainer>
     );
   }
 }

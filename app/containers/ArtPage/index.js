@@ -16,7 +16,7 @@ import { connect } from 'react-redux';
 import { Images2017, Images2016, Images2011, TheyReturn } from './images';
 import SideNav from '../../components/SideNav';
 import { selectGallery } from '../../actions';
-import { Container } from './styles';
+import { ContentContainer } from '../App/styles';
 import {
   SELECT_GALLERY
 } from '../../constants/actionTypes';
@@ -53,14 +53,14 @@ class ArtPage extends React.Component { // eslint-disable-line react/prefer-stat
             galleryImages = Images2017;
     }
     return (
-      <Container>
+      <ContentContainer>
         <MediaQuery minWidth={1000}>
           <SideNav />
         </MediaQuery>
         <div style={{ maxWidth: '530px', margin: '0 auto' }}>
           <Gallery images={galleryImages}/>
         </div>
-      </Container>
+      </ContentContainer>
     );
   }
 }

@@ -39,6 +39,9 @@ injectGlobal`
         font-size: 0.8em;
     }
   }
+  h3{
+    margin-top: 0px;
+  }
   ul {
     padding-left: 0px
   }

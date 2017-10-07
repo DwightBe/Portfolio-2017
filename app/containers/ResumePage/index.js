@@ -67,9 +67,6 @@ export default class ResumePage extends React.PureComponent { // eslint-disable-
           Bachelor of Arts, Arts and Technology, University of Texas at Dallas, 2004-2008 Attended Oregon Institute of Technology, 2009-2011
           Awards
         </p>
-        <p>
-          Winner of the Mozilla & Goo Game Creator Challenge: Best Amateur Game Scene Javascript/WebGL/Goo Engine, January 2014
-        </p>
       </div>
     );
   }

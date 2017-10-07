@@ -11,12 +11,13 @@
 /* eslint-disable */
 
 import React from 'react';
+import { ContentContainer } from '../App/styles';
 
 
 export default class GamePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div style={{margin: '20px auto', textAlign: 'center'}}>
+      <ContentContainer>
         <h3><i>Untitled Unity Game Project, 2014</i></h3>
           <div style={{maxWidth: '500px', textAlign: 'center', margin: '0 auto'}}>
             <p>
@@ -28,8 +29,7 @@ export default class GamePage extends React.PureComponent { // eslint-disable-li
           src="https://www.youtube.com/embed/yUskm1eCoog"
           frameBorder="0" allowFullScreen>
         </iframe>
-
-      </div>
+      </ContentContainer>
     );
   }
 }
