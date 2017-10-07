@@ -20,9 +20,6 @@ export const Name = styled.div`
       height: 52px;
       line-height: 60px;
   }
-  &:hover {
-    color: tomato;
-  }
 `;
 
 export const Title = styled.div`

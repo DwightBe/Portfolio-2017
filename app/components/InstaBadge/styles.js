@@ -14,7 +14,7 @@ export const Badge = styled.div`
 	@media (max-width: 480px) {
 		font-size: 0.4em;
 		top: 44px;
-		right: 30px;
+		right: 36px;
 	}
 
 `;
