@@ -3,17 +3,17 @@ import styled from 'styled-components';
 export const Badge = styled.div`
 	font-size: 0.6em;
 	position: absolute;
-	top: 24px;
+	top: 34px;
 	right: 50px;
 
 	@media (max-width: 767px) {
 		font-size: 0.5em;
-		top: 34px;
+		top: 38px;
 	}
 
 	@media (max-width: 480px) {
 		font-size: 0.4em;
-		top: 44px;
+		top: 24px;
 		right: 36px;
 	}
 

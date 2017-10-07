@@ -29,3 +29,21 @@ export const SubMenuItem = styled.li`
     margin: 10px;
   }
 `;
+
+export const Container = styled.nav`
+  width: 180px;
+  z-index: 3;
+  position: fixed;
+  top: 90px;
+  line-height: 20px;
+
+  @media (max-width: 767px) {
+    width: 160px;
+    top: 90px;
+  }
+  @media (max-width: 480px) {
+    width: 100px;
+    top: 80px;
+    line-height: 16px;
+  }
+`;

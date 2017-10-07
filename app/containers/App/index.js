@@ -20,11 +20,12 @@ import MusicPage from 'containers/MusicPage/Loadable';
 import GamePage from 'containers/GamePage/Loadable';
 import ResumePage from 'containers/ResumePage/Loadable';
 import Header from 'components/Header';
+import { Container } from './styles';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 export default function App() {
   return (
-    <div style={{ padding: '20px 32px 0px' }}>
+    <Container>
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
@@ -34,6 +35,6 @@ export default function App() {
         <Route exact path="/resume" component={ResumePage} />
         <Route component={NotFoundPage} />
       </Switch>
-    </div>
+    </Container>
   );
 }

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { selectGallery } from '../../actions';
 import MediaQuery from 'react-responsive';
-import { MenuItem, SubMenuItem } from './styles';
+import { MenuItem, SubMenuItem, Container } from './styles';
 import './styles';
 import {
   SELECT_GALLERY
@@ -12,15 +12,7 @@ import {
 class SideNav extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <nav
-        style={{
-          width: '180px',
-          zIndex: 3,
-          position: 'fixed',
-          top: '100px',
-          lineHeight: '20px',
-        }}
-      >
+      <Container>
         <ul>
           <MediaQuery maxWidth={1000}>
             <MenuItem>
@@ -67,7 +59,7 @@ class SideNav extends React.Component { // eslint-disable-line react/prefer-stat
             </MenuItem>
           </MediaQuery>
         </ul>
-      </nav>
+      </Container>
     );
   }
 }
