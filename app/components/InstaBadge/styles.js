@@ -12,8 +12,9 @@ export const Badge = styled.div`
 	}
 
 	@media (max-width: 480px) {
-		font-size: 0.5em;
+		font-size: 0.4em;
 		top: 44px;
+		right: 25px;
 	}
 
 `;
@@ -27,7 +28,9 @@ export const Logo = styled.img`
 	@media (max-width: 767px) {
 		top: 1px;
 		left: -15px;
-
+	}
+	@media (max-width: 480px) {
+		top: 0px;
 	}
 
 `;
