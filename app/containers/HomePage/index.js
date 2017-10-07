@@ -19,8 +19,19 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
   render() {
     return (
       <div>
-        <MediaQuery maxWidth={800}>
+        <MediaQuery maxWidth={1000}>
           <SideNav />
+        </MediaQuery>
+        <MediaQuery minWidth={999}>
+          <div style={{
+                  textAlign: 'center',
+                  padding: '40px',
+                  maxWidth: '600px',
+                  fontSize: '1.2em',
+                  margin: '0 auto'}}>
+            Hello! Welcome to my portfolio. I am an artist and software developer living and working in Austin, Tx. I have been showing
+            portraits in galleries since 2016, and working on software projects since 2012. This portfolio showcases all of my work in various media.
+          </div>
         </MediaQuery>
       </div>
     );
