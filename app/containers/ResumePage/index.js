@@ -31,7 +31,7 @@ export default class ResumePage extends React.PureComponent { // eslint-disable-
           <h3> Professional Experience </h3>
           <b>July 2016 - Present</b> <br/>
           Created portrait paintings with traditional media shown at various galleries: <br/>
-          • Black Lagoon,  e Austin Series Vol. III, Part 2, Various Works, Guache on Paper Austin, Tx, July 2017 <br/>
+          • Black Lagoon, The Austin Series Vol. III, Part 2, Various Works, Guache on Paper Austin, Tx, July 2017 <br/>
           • Artbox.Project, Various Works, Digital, Oil on Canvas, Guache on Paper Basel, Switzerland, June 2017 <br/>
           • Georgetown Art Hop, “Ellen”, Oil on Canvas Georgetown, TX, September 2016 <br/>
         </p>

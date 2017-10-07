@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
 import MediaQuery from 'react-responsive';
 import { Name, Title, MenuItem } from './styles';
+import InstaBadge from '../InstaBadge'
 
 class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -18,7 +19,7 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
             Multimedia Artist and Programmer
           </Title>
         </div>
-
+        <InstaBadge />
         <nav style={{ height: '80px' }}>
           <ul style={{ listStyleType: 'none', marginTop: 50 }}>
             <MediaQuery minWidth={1000}>
