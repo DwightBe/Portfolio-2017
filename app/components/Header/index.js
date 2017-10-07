@@ -9,7 +9,7 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
   render() {
     return (
       <NavBar style={{ fontSize: '1.2em' }}>
-        <div style={{ height: '80px' }}>
+        <div style={{ height: '80px', marginLeft: '2px' }}>
           <Link to="/">
             <Name>
               Dwight Benignus
