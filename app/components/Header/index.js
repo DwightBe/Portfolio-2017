@@ -7,6 +7,8 @@ import InstaBadge from '../InstaBadge'
 
 class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
+    let currentPath = window.location.pathname;
+    console.log('currentPath', currentPath);
     return (
       <NavBar style={{ fontSize: '1.2em' }}>
         <div style={{ height: '80px', marginLeft: '2px' }}>
@@ -50,11 +52,12 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
               </MenuItem>
             </MediaQuery>
             <MediaQuery maxWidth={999}>
+              {!(currentPath === '/') ?
               <MenuItem>
                 <Link to="/">
                   Projects
                 </Link>
-              </MenuItem>
+              </MenuItem> : null}
               <MenuItem>
                 <Link to="/resume">
                   ?
