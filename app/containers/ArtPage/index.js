@@ -26,14 +26,6 @@ class ArtPage extends React.Component { // eslint-disable-line react/prefer-stat
     super(props);
   }
 
-  handleClick(images) {
-    this.props.selectGallery(images);
-
-    this.setState({
-      images,
-    });
-  }
-
   render() {
     let galleryImages;
     switch(this.props.gallery) {
