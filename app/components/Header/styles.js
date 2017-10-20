@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Name = styled.div`
 	color: palevioletred;
-  font-size: 1.5em;
+  font-size: 0.4em;
   font-weight: 900;
 
   @media (min-width: 768px) {
@@ -20,6 +20,13 @@ export const Name = styled.div`
       height: 52px;
       line-height: 60px;
   }
+	@media (max-width: 350px) {
+			font-size: 0.8em;
+			height: 40px;
+	}
+	@media (max-width: 300px) {
+			font-size: 0.6em;
+	}
 `;
 
 export const Title = styled.div`
