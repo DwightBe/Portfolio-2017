@@ -13,6 +13,7 @@
 import React from 'react';
 import MediaQuery from 'react-responsive';
 import SideNav from 'components/SideNav';
+import Checkout from '../../components/Checkout';
 
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
