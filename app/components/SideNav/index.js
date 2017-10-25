@@ -8,6 +8,7 @@ import './styles';
 import {
   SELECT_GALLERY
 } from '../../constants/actionTypes';
+import Checkout from '../Checkout'
 
 class SideNav extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -56,6 +57,13 @@ class SideNav extends React.Component { // eslint-disable-line react/prefer-stat
               <a href="https://github.com/DwightBe">
                 Code
               </a>
+            </MenuItem>
+            <MenuItem>
+              <Checkout
+                  name={'Become a Patron'}
+                  description={'Help me make art by giving a tip'}
+                  amount={1}
+                />
             </MenuItem>
           </MediaQuery>
         </ul>

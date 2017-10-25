@@ -36,6 +36,8 @@ const Checkout = ({ name, description, amount }) =>
     token={onToken(amount, description)}
     currency={CURRENCY}
     stripeKey={STRIPE_PUBLISHABLE}
-  />
+  >
+    <button style={{padding: 0}} type="button">Be a Patron!</button>
+  </StripeCheckout>
 
 export default Checkout;
