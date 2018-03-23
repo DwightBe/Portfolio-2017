@@ -1,4 +1,13 @@
 /* eslint-disable */
+export const Images2018 =
+  [{
+        src: require(`${'../../images/2018/Zoe.jpg'}`),
+        thumbnail: require(`${'../../images/2018/Zoe_thb.jpg'}`),
+        thumbnailWidth: 108,
+        thumbnailHeight: 144,
+        caption: ""
+  },
+];
 export const Images2017 =
   [{
         src: require(`${'../../images/Guache-Watercolor-2017/Andrea.jpg'}`),
@@ -94,14 +103,6 @@ export const Images2016 =
           thumbnailHeight: 144,
           caption: ""
     },
-    {
-          src: require(`${'../../images/Oil-2016/Zoe.jpg'}`),
-          thumbnail: require(`${'../../images/Oil-2016/Zoe_thb.jpg'}`),
-          thumbnailWidth: 108,
-          thumbnailHeight: 144,
-          caption: ""
-    },
-
 ];
 
 export const Images2011 =

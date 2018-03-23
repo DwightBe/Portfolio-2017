@@ -22,6 +22,11 @@ class SideNav extends React.Component { // eslint-disable-line react/prefer-stat
               </Link>
             </MenuItem>
           </MediaQuery>
+          <SubMenuItem onClick={() => this.props.onGalleryClick('Images2018')}>
+            <Link to="/art">
+              Works, 2018
+            </Link>
+          </SubMenuItem>
           <SubMenuItem onClick={() => this.props.onGalleryClick('Images2017')}>
             <Link to="/art">
               Guache/Watercolor Portraits, 2016 - 2017

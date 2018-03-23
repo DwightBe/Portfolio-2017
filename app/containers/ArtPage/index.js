@@ -13,7 +13,7 @@ import React from 'react';
 import Gallery from 'react-grid-gallery';
 import MediaQuery from 'react-responsive';
 import { connect } from 'react-redux';
-import { Images2017, Images2016, Images2011, TheyReturn } from './images';
+import { Images2018, Images2017, Images2016, Images2011, TheyReturn } from './images';
 import SideNav from '../../components/SideNav';
 import { selectGallery } from '../../actions';
 import { ContentContainer } from '../App/styles';
@@ -29,6 +29,9 @@ class ArtPage extends React.Component { // eslint-disable-line react/prefer-stat
   render() {
     let galleryImages;
     switch(this.props.gallery) {
+        case 'Images2018':
+            galleryImages = Images2018;
+            break;
         case 'Images2017':
             galleryImages = Images2017;
             break;
