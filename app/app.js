@@ -35,7 +35,7 @@ import 'file-loader?name=[name].[ext]!./.htaccess';
 import './global-styles';
 
 // Create redux store with history
-const initialState = {};
+//const initialState = {};
 const history = createHistory();
 const store = createStore(reducer);
 

@@ -11,6 +11,7 @@ import {
 import Checkout from '../Checkout'
 
 class SideNav extends React.Component { // eslint-disable-line react/prefer-stateless-function
+
   render() {
     return (
       <Container>

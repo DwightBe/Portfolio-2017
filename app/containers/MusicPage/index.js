@@ -19,6 +19,8 @@ export default class MusicPage extends React.PureComponent { // eslint-disable-l
     return (
       <ContentContainer>
         <h3><i>Untitled Album, 2015</i></h3>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/23638682&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+        </iframe>
         <iframe
         style={{border: 0, width: '80%', maxWidth: '350px', height: '470px'}}
         src="https://bandcamp.com/EmbeddedPlayer/album=3692719315/size=large/bgcol=ffffff/linkcol=63b2cc/tracklist=false/transparent=true/" seamless>
