@@ -26,7 +26,7 @@ export default class MusicPage extends React.PureComponent { // eslint-disable-l
           Untitled Album by Dwight Benignus
           </a>
         </iframe>
-        <h3><i>Soundcloud</i></h3>
+        <h3><i>S<a href = "https://sudsclub.bandcamp.com/track/mexican-radio">o</a>un<a href="https://sudsclub.bandcamp.com/track/helpno">d</a>cl<a href="https://www.youtube.com/watch?v=wHvp4jgW0uc">o</a>ud</i></h3>
         <iframe width="400px" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/23638682&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
         </iframe>
       </ContentContainer>
