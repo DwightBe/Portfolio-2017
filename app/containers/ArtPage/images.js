@@ -1,8 +1,73 @@
 /* eslint-disable */
+export const Images2019 =
+  [{
+        src: require(`${'../../images/2019/Jan_Study.jpg'}`),
+        thumbnail: require(`${'../../images/2019/Jan_Study_thb.jpg'}`),
+        thumbnailWidth: 108,
+        thumbnailHeight: 144,
+        caption: ""
+  },
+  {
+        src: require(`${'../../images/2019/Feb_Study.jpg'}`),
+        thumbnail: require(`${'../../images/2019/Feb_Study_thb.jpg'}`),
+        thumbnailWidth: 108,
+        thumbnailHeight: 144,
+        caption: ""
+  },
+  {
+        src: require(`${'../../images/2019/Apr_Study.jpg'}`),
+        thumbnail: require(`${'../../images/2019/Apr_Study_thb.jpg'}`),
+        thumbnailWidth: 108,
+        thumbnailHeight: 144,
+        caption: ""
+  },
+  {
+        src: require(`${'../../images/2019/The_River.jpg'}`),
+        thumbnail: require(`${'../../images/2019/The_River_thb.jpg'}`),
+        thumbnailWidth: 108,
+        thumbnailHeight: 144,
+        caption: ""
+  },
+];
 export const Images2018 =
   [{
         src: require(`${'../../images/2018/Zoe.jpg'}`),
         thumbnail: require(`${'../../images/2018/Zoe_thb.jpg'}`),
+        thumbnailWidth: 108,
+        thumbnailHeight: 144,
+        caption: ""
+  },
+  {
+        src: require(`${'../../images/2018/Oct_Study.jpg'}`),
+        thumbnail: require(`${'../../images/2018/Oct_Study_thb.jpg'}`),
+        thumbnailWidth: 108,
+        thumbnailHeight: 144,
+        caption: ""
+  },
+  {
+        src: require(`${'../../images/2018/Sep_Study.jpg'}`),
+        thumbnail: require(`${'../../images/2018/Sep_Study_thb.jpg'}`),
+        thumbnailWidth: 108,
+        thumbnailHeight: 144,
+        caption: ""
+  },
+  {
+        src: require(`${'../../images/2018/Dec_Study.jpg'}`),
+        thumbnail: require(`${'../../images/2018/Dec_Study_thb.jpg'}`),
+        thumbnailWidth: 108,
+        thumbnailHeight: 144,
+        caption: ""
+  },
+  {
+        src: require(`${'../../images/2018/Dec_Study_2.jpg'}`),
+        thumbnail: require(`${'../../images/2018/Dec_Study_2_thb.jpg'}`),
+        thumbnailWidth: 108,
+        thumbnailHeight: 144,
+        caption: ""
+  },
+  {
+        src: require(`${'../../images/2018/Dec_Study_3.jpg'}`),
+        thumbnail: require(`${'../../images/2018/Dec_Study_3_thb.jpg'}`),
         thumbnailWidth: 108,
         thumbnailHeight: 144,
         caption: ""

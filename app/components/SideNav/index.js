@@ -23,6 +23,11 @@ class SideNav extends React.Component { // eslint-disable-line react/prefer-stat
               </Link>
             </MenuItem>
           </MediaQuery>
+          <SubMenuItem onClick={() => this.props.onGalleryClick('Images2019')}>
+            <Link to="/art">
+              Works, 2019
+            </Link>
+          </SubMenuItem>
           <SubMenuItem onClick={() => this.props.onGalleryClick('Images2018')}>
             <Link to="/art">
               Works, 2018
@@ -50,11 +55,6 @@ class SideNav extends React.Component { // eslint-disable-line react/prefer-stat
           </SubMenuItem>
           <MediaQuery maxWidth={1000}>
             <MenuItem>
-              <Link to="/music">
-                Music
-              </Link>
-            </MenuItem>
-            <MenuItem>
               <Link to="/game">
                 Game
               </Link>
@@ -63,13 +63,6 @@ class SideNav extends React.Component { // eslint-disable-line react/prefer-stat
               <a href="https://github.com/DwightBe">
                 Code
               </a>
-            </MenuItem>
-            <MenuItem>
-              <Checkout
-                  name={'Become a Patron'}
-                  description={'Help me make art by giving a tip'}
-                  amount={1}
-                />
             </MenuItem>
           </MediaQuery>
         </ul>

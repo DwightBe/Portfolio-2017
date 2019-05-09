@@ -30,11 +30,6 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
                 </Link>
               </MenuItem>
               <MenuItem>
-                <Link to="music">
-                  Music
-                </Link>
-              </MenuItem>
-              <MenuItem>
                 <Link to="/game">
                   Game
                 </Link>
