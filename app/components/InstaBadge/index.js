@@ -5,10 +5,10 @@ class InstaBadge extends React.Component { // eslint-disable-line react/prefer-s
   render() {
     return (
       <Badge>
-        <a href="https://www.instagram.com/dwight_draws/">
+        <a href="https://www.instagram.com/dwightbenignus/">
           <div>
             <Logo src={require('../../images/ig-logo.png')}/>
-            <div style={{display:'inline'}}>instagram: dwight_draws</div>
+            <div style={{display:'inline'}}>instagram: dwightbenignus</div>
           </div>
         </a>
       </Badge>
