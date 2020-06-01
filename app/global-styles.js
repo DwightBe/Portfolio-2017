@@ -1,4 +1,4 @@
-import { injectGlobal } from 'styled-components';
+import { injectGlobal } from "styled-components";
 
 /* eslint no-unused-expressions: 0 */
 injectGlobal`
@@ -6,6 +6,7 @@ injectGlobal`
   body {
     height: 100%;
     width: 100%;
+    background-color: #fafafa;
   }
 
   body {
