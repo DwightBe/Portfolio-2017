@@ -10,4 +10,4 @@
  */
 
 export const DEFAULT_LOCALE = 'en';
-export const DEFAULT_GALLERY = 'Images2017';
+export const DEFAULT_GALLERY = 'Images2019';
