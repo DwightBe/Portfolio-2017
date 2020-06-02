@@ -142,13 +142,6 @@ export const Images2018 = [
     thumbnailHeight: 144,
     caption: "",
   },
-  {
-    src: require(`${"../../images/2018/Dec_Study_3.jpg"}`),
-    thumbnail: require(`${"../../images/2018/Dec_Study_3_thb.jpg"}`),
-    thumbnailWidth: 108,
-    thumbnailHeight: 144,
-    caption: "",
-  },
 ];
 export const Images2017 = [
   {
