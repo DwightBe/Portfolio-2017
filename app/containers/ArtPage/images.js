@@ -36,13 +36,6 @@ export const Images2019 = [
     caption: "",
   },
   {
-    src: require(`${"../../images/2019/Aug_Study.jpg"}`),
-    thumbnail: require(`${"../../images/2019/Aug_Study_thb.jpg"}`),
-    thumbnailWidth: 108,
-    thumbnailHeight: 144,
-    caption: "",
-  },
-  {
     src: require(`${"../../images/2019/The_River.jpg"}`),
     thumbnail: require(`${"../../images/2019/The_River_thb.jpg"}`),
     thumbnailWidth: 108,
